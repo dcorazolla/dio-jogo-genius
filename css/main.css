@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(194, 195, 206);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container-jogo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas: 'verde vermelho' 
+    'amarelo azul';
+    grid-gap: 10px;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 600px;
+    height: 600px;
+    background-color: #000;
+}
+
+.botoes {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 250px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 500;
+}
+
+.azul {
+    grid-area: azul;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+    border-bottom: 40px solid #000;
+    border-right: 40px solid #000;
+    opacity: .3;
+}
+
+.vermelho {
+    grid-area: vermelho;
+    background-color: red;
+    border-top-right-radius: 100%;
+    border-top: 40px solid #000;
+    border-right: 40px solid #000;
+    opacity: .3;
+}
+
+.verde {
+    grid-area: verde;
+    background-color: green;
+    border-top-left-radius: 100%;
+    border-top: 40px solid #000;
+    border-left: 40px solid #000;
+    opacity: .3;
+}
+
+.amarelo {
+    grid-area: amarelo;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+    border-bottom: 40px solid #000;
+    border-left: 40px solid #000;
+    opacity: .3;
+}
+
+.selecionado {
+    opacity: 1;
+}
+
+.txtrodada {
+    color: yellow;
+    font-size: 20px;
+}
+
+.btniniciar {
+    padding: 5px 15px;
+    margin-top: 10px;
+}
