@@ -69,6 +69,7 @@ let lose = () => {
     alert(`Voce perdeu`);
     order = [];
     orderUser = [];
+    score = 0;
     document.getElementById("btniniciar").disabled = 0;
 };
 
